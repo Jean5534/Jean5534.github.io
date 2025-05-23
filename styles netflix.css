@@ -1,0 +1,271 @@
+@font-face {
+  font-family: NetnetB;
+  src: url('../../font/AvenirNextCondensed.ttc');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: NetnetB;
+  src: url('../../font/AvenirNext.ttc');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Netnetb;
+  src: url('../../font/Avenir.ttc');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: Arial;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.Goal{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.header {
+  /*border: 1px solid purple;*/
+  padding: 17px 17px 100px;
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(to bottom, black 0%, black 60%, rgba(0,0,0, .5) 85%, transparent 100%);
+}
+.navigation-item {
+  list-style: none;
+  /*border: 1px solid yellow;*/
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.navigation{
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-auto-columns: 100px;
+  grid-auto-flow: column;
+  justify-content: space-around;
+}
+
+.featured{
+  margin-top: -70px;
+  position: relative;
+  /*border: 1px solid red;*/
+  overflow: hidden;
+}
+
+.featured-details{
+  border: 1px solidred;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to top, black 0%, transparent 100%);
+}
+
+
+
+.tags {
+  border: 1px solidyellow;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.tag {
+  border: 1px solidred;
+  display: flex;
+}
+
+.tag::before {
+  content: ".";
+  margin-right: 10px;
+position: relative;
+top: 2px;
+}
+
+.tag:first-child::before {
+display: none;
+}
+
+
+.featured-actions {
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+
+.button {
+/*border: 1px solid blue;*/
+background: white;
+display: flex;
+align-items: center;
+padding: 5px 1em 5px .5em;
+border: none;
+border-radius: 3px;
+}
+
+.button::before {
+  /*border: 1px solid red;*/
+content: "";
+display: inline-block;
+width: 25px;
+height: 25px;
+margin-right: 5px;
+
+}
+
+.button-secondary {
+  background: none;
+  color: white;
+  /*border: 1px solid red;*/
+  font-size: 1.1em;
+  min-width: 100px;
+  cursor: pointer;
+  border: none;
+
+}
+
+
+.button-secondary::before {
+  content: "";
+  display: block;
+  /*border: 1px solid green;*/
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.icon-plus::before {
+  background: url("../../Netnet-base/icons/plus.svg");
+}
+
+.icon-play::before {
+  background: url("../../Netnet-base/icons/play.svg");
+}
+
+
+.icon-info::before {
+  background: url("../../Netnet-base/icons/info.svg");
+}
+
+
+.footer {
+/*border: 1px solid red;*/
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+.list-title {
+  color: white;
+  font-family: helvetica;
+  font-size: 20px;
+  font-weight: 600;
+  
+
+}
+
+.list-content {
+  /*border: 1px solid red;*/
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.list-item {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.list-item:first-child {
+  margin: 0;
+}
+
+
+.list {
+ /* border: 1px solid green;*/
+  padding: 0 1em;
+}
+
+
+main {
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+.footer {
+/*border: 1px solid red;*/
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+background: black;
+padding: 1em 0;
+
+}
+
+.tab-list {
+  /*border: 1px solid green;*/
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  color: #6e6e6e;
+}
+
+.tab-list a {
+  color: #6e6e6e;
+}
+
+
+.tabs-item {
+  /*border: 1px solid purple;*/
+  text-align: center;
+
+}
+
+.tabs-item svg {
+  display: block;
+  /*border: 1px solid red;*/
+  margin: auto
+
+}
+
+
+.tabs-item path {
+  fill: #6e6e6e;
+
+  
+
+}
+
+.tabs-item:hover :is(path, span) {
+  fill: white;
+  color: white;
+}
